@@ -2,10 +2,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
   SiJupyter,
   SiNotion,
   SiDiscord,
@@ -30,6 +26,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTrello />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJupyter />
       </Col>
     </Row>
   );
