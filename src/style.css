@@ -87,7 +87,13 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  text-align: left;
 }
+
+.navbar home {
+  text-align: left;
+}
+
 
 .navbar-toggler {
   position: relative !important;
@@ -208,6 +214,65 @@ button:focus {
 /* --------- */
 /* Home section */
 /* --------- */
+
+.rounded-img {
+  width: 400;
+  height: 400;
+  clip-path: circle(25%);
+  transform: scale(1.6);
+  object-position: 10% 90%;
+}
+
+.home-experience-section {
+  position: relative;
+  margin-top: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.experience-heading {
+  font-size: 2.4em;
+  margin-bottom: 50px;
+  color: var(--imp-text-color);
+}
+
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+  color: white !important;
+  text-align: left;
+  }
+
+.experience-list li {
+  padding-bottom: 30px;
+}
+  
+.experience-list strong {
+  font-size: 1.4em;
+  color: var(--imp-text-color) !important;
+  text-align: left;
+}
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience-content b {
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.experience-list p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
@@ -325,7 +390,7 @@ button:focus {
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 70px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -582,6 +647,7 @@ button:focus {
 }
 
 .quote-card-view {
+  font-size: 1.2em;
   border: none !important;
   color: white !important;
   background-color: transparent !important;
