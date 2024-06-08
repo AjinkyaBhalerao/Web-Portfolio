@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import myImg from "../../Assets/avatar.jpg";
+/*import Tilt from "react-parallax-tilt";*/
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -15,7 +15,7 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.4em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
@@ -60,9 +60,51 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+            <img src={myImg} className="img-fluid rounded-img" alt="avatar" />
+          </Col>
+        </Row>
+
+        <Row>
+          <Col md={12} className="home-experience-section">
+            <h1 className="experience-heading">
+              EXPERIENCE
+            </h1>
+            <ul className="experience-list">
+              <li className="experience-item">
+                <div className="experience-content">
+                  <strong>Data Science Intern – Kheops.ai France </strong>
+                  <b>
+                    (March 2024 – August 2024)</b>
+                </div>
+                <p>Responsible for leveraging a Software as a Service (SaaS) model by <br></br>
+                  implementing NLP based autonomous agents for enterprises.</p>
+                <p><i>Tech stack: API Handling, Python, SQL, Mistral LM, Docker, Git</i></p>
+              </li>
+              <li className="experience-item">
+              <div className="experience-content">
+                <strong>Project Intern – ORACLE India</strong> <b>(June 2023 – August 2023)</b>
+              </div>
+                <p>Integrated disparate data sources into a centralized data warehouse using <br></br>
+                Oracle Data Integrator (ODI). Additionally, gained insights on core banking procedures.</p>
+                <p><i>Tech stack: PLSQL, Oracle DB, FLEXCUBE, JMS, Apache Kafka, VBA</i></p>
+              </li>
+              <li className="experience-item">
+              <div className="experience-content">
+                <strong>Summer Intern – SICSS</strong> <b>(July 2022)</b>
+              </div>
+                <p>Contributed in a socio-analysis mental health study to address issues in the <br></br>
+                Indian educational sector, where I played a pivotal role in Data Collection, <br></br>
+                Pre-Processing, and Analysis to derive foundational conclusions.</p>
+                <p><i>Tech Stack: Web-Scraping, Pandas, MatplotLib, ScikitLearn</i></p>
+              </li>
+              <li className="experience-item">
+              <div className="experience-content">  
+                <strong>Finance & Accounting Coordinator – MARC, Mahindra University</strong> <b>(April 2022 – Jan 2023)</b>
+              </div>
+                <p>Authorized with overlooking direct incoming funds from Mahindra Ecole Centrale alumni <br></br>
+                  and managing allowances for alumni events and functions as investments for University career building.</p>
+              </li> 
+            </ul>
           </Col>
         </Row>
         <Row>
