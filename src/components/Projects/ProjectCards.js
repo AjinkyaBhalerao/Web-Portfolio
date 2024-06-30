@@ -13,25 +13,55 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        {/* If the component contains certify link and if it's not a certificate then, it will render the below component  */}
 
-        {!props.isBlog && props.demoLink && (
+        {!props.ghLink && props.certifyLink && (
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.certifyLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {"See Certification"}
           </Button>
+        )}
+
+        {props.ghLink && !props.certifyLink && (
+          <Button 
+            variant="primary" 
+            href={props.ghLink} 
+            target="_blank"
+          >
+            <BsGithub /> &nbsp;
+              {"GitHub"}
+          </Button>        
+        )}
+
+        {props.ghLink && props.certifyLink && (
+        <>
+          <Button 
+            variant="primary" 
+            href={props.ghLink} 
+            target="_blank"
+          >
+            <BsGithub /> &nbsp;
+            {"GitHub"}
+          </Button>
+
+          <Button
+            variant="primary"
+            href={props.certifyLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <CgWebsite /> &nbsp;
+            {"See Certification"}
+          </Button>
+        </>
         )}
       </Card.Body>
     </Card>
